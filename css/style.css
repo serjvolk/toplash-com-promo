@@ -2076,9 +2076,9 @@ video {
   }
 
   .block-01__image img {
-    -webkit-transform: translate(-35%, -10%) scale(1);
-        -ms-transform: translate(-35%, -10%) scale(1);
-            transform: translate(-35%, -10%) scale(1);
+    -webkit-transform: translate(-30%, -11%) scale(0.8);
+        -ms-transform: translate(-30%, -11%) scale(0.8);
+            transform: translate(-30%, -11%) scale(0.8);
   }
 
   .block-01__items {
@@ -2121,6 +2121,7 @@ video {
   .item-svg p {
     margin-top: 4px;
     display: block;
+    font-size: 12px;
   }
 
   .bayer {
@@ -2170,10 +2171,16 @@ video {
             flex: 0 0 100%;
   }
 
-  .block-06__colText {
+  .block-06__colImage {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 62.6%;
-            flex: 0 0 62.6%;
+        -ms-flex: 0 0 90px;
+            flex: 0 0 90px;
+  }
+
+  .block-06__colText {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 
   .block-06__image img {
@@ -2200,6 +2207,26 @@ video {
     max-width: none;
     width: 100%;
     padding: 48px 16px;
+  }
+}
+
+@media (max-width: 440px) {
+  .block-01__image img {
+    -webkit-transform: translate(-20%, -11%) scale(0.8);
+        -ms-transform: translate(-20%, -11%) scale(0.8);
+            transform: translate(-20%, -11%) scale(0.8);
+  }
+
+  .block-01__card {
+    width: 150px;
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+
+  .block-01__card img {
+    width: 100%;
+    height: auto;
   }
 }
 
